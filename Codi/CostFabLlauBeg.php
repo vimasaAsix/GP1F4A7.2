@@ -38,8 +38,24 @@
 			return $mostra_cost;			
  		}	
 	}
-	$llauna_beguda = new llauna($_GET['r'],$_GET['l'],$_GET['g'],$_GET['d'],$_GET['cpg']);
-	echo $llauna_beguda->mostra_cost_fabricacio_llauna_en_dolars();
-?>
+
+?>	
+
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8">
+		<title>Cost de fabricació de llaunes</title>
+	<head>
+	<body>
+		<?php
+				$llauna_beguda = new llauna($_GET['r'],$_GET['l'],$_GET['g'],$_GET['d'],$_GET['cpg']);
+				echo $llauna_beguda->mostra_cost_fabricacio_llauna_en_dolars();
+				?>
+				<a href="index.html">Torna al formulari</a>
+	</body>
+</html>
+
+
 	
 	
